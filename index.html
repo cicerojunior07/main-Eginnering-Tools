@@ -238,12 +238,24 @@
 <script>
   
   
-    const timeElapsed = Date.now();
-    const today = new Date(timeElapsed);
+  
+    var data = new Date(),
+        dia  = data.getDate().toString(),
+        diaF = (dia.length == 1) ? '0'+dia : dia,
+        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+        mesF = (mes.length == 1) ? '0'+mes : mes,
+        anoF = data.getFullYear();
+    const today = diaF+"/"+mesF+"/"+anoF;
+
+  
+  
+    
+     
+  
 
   //today.toLocaleDateString();
     const a = document.querySelector("#meu-link");
-    a.href = "http://www.alumar.soa.alcoa.com/OPM/Report/frmReportOperLogResult.aspx?ReportTitle=Relat%C3%B3rio%20de%20Ocorr%C3%AAncias%20Operacionais&ReportDesc=Precipita%C3%A7%C3%A3o%20-%20Opera%C3%A7%C3%A3o%20Precipita%C3%A7%C3%A3o%2045&ReportDefId=4&ReportDate="+today.toLocaleDateString()+"%2000:00:00&ShiftId=1&OperCenterId=0&ReportType=O&ReportID=0&ViewPDF=Y";
+    a.href = "http://www.alumar.soa.alcoa.com/OPM/Report/frmReportOperLogResult.aspx?ReportTitle=Relat%C3%B3rio%20de%20Ocorr%C3%AAncias%20Operacionais&ReportDesc=Precipita%C3%A7%C3%A3o%20-%20Opera%C3%A7%C3%A3o%20Precipita%C3%A7%C3%A3o%2045&ReportDefId=4&ReportDate="+today+"%2000:00:00&ShiftId=1&OperCenterId=0&ReportType=O&ReportID=0&ViewPDF=Y";
     
   
 </script> 

@@ -8,6 +8,7 @@
 }
 
 .caixa02{
+    background: white;
     margin: 0.5vw 0.1vw; 
     padding: 10px 0;
     -webkit-box-shadow: 2px 2px 10px 0px rgba(101, 133, 106, 0.77);
@@ -130,14 +131,18 @@ a:active {
 .module {
    
     color: white;
-    border-width: 3px;
-    border-style: solid;
-    border-image: 
+    /* border-width: 4px; */
+    /* border-style: solid; */
+    background: #9cb6d83b;
+    padding: 10px 0;
+    /* border-color: #1f0881;
+    border-radius: 25px ; */
+    /* border-image: 
       linear-gradient(
         to bottom, 
         rgba(37,37,60,1), 
         rgba(0,0,0,1)
-      ) 1 100%;
+      ) 1 100%; */
   }
 
   .border-gradient-purple{
